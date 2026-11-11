@@ -24,7 +24,7 @@ jobs:
 
       - name: Test invalid name
         run: |
-          result=$(./validate-data.sh ChristopherLong 1234567890)
+          result=$(./validate-data.sh ChristopherLongNameXY 1234567890)
           echo "Test 2: $result"
           [ "$result" = "FAIL" ]
 
