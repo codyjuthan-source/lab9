@@ -1,0 +1,63 @@
+
+
+
+  489  gh repo create lab9 --public --clone
+  490  cd lab9
+  491  gh label create EPIC --color 5319E7
+  492  gh issue create   --title "do lab9"   --label EPIC
+  493  gh issue create   --title "do lab9"   --label EPIC
+  494  gh label create EPIC --color 5319E7
+  495  gh issue create   --title "do lab9"   --label EPIC
+  496  gh issue edit 1 --add-assignee @me
+  497  gh issue view 1
+  498  gh issue create   --title "create yaml test script"   --label enhancement   --assignee @me
+  499  gh label create enhancement --color 0E8A16
+  500  gh issue create   --title "create yaml test script"   --label enhancement   --assignee @me
+  501  gh issue create   --title "create yaml test script"   --label enhancement   --assignee @me
+  502  gh repo view --web
+  503  gh issue list
+  504  git checkout -b test
+  505  if [ ${#name} -le 20 ] && [ ${#mobile} -le 10 ]; then on:;   push:;     branches:;       - main;       - test
+  506  gh issue list
+  507  gh issue edit 2  --title "create validate-data script"
+  508  gh issue list
+  509  nano validate-data.sh
+  510  chmod +x validate-data.sh
+  511  mkdir -p .github/workflows
+  512  nano .github/workflows/basictests.yml
+  513  git add validate-data.sh .github/workflows/basictests.yml
+  514  git commit -m "Add validation script and basic tests"
+  515  git push origin main
+  516  git branch -M main
+  517  git push origin main
+  518  nano .github/workflows/basictests.yml
+  519  ./validate-data.sh ChristopherLongNameXY 1234567890
+  520  git add .github/workflows/basictests.yml
+  521  git commit -m "Fix invalid name test for 20 character limit"
+  522  git push origin test
+  523  git push origin main
+  524  gh issue list
+  525  gh issue list --state all
+  526  gh issue close 1
+  527  gh issue close 2
+  528  gh issue close 3
+  529  gh issue create --title "Create lab9 project view" --label enhancement --assignee @me
+  530  gh issue list
+  531  gh project create --owner @me --title "lab9"
+  532  gh repo view --web
+  533  gh project create --owner @me --title "lab9"
+  534  gh auth refresh -s project,read:project
+  535  gh project create --owner @me --title "lab9"
+  536  gh issue create --title "Create test branch and update workflow" --label enhancement --assignee @me
+  537  git checkout -b test
+  538  git branch
+  539  nano validate-data.sh
+  540  git add validate-data.sh
+  541  git commit -m "Change maximum name length to 20"
+  542  git push -u origin test
+  543  nano .github/workflows/basictests.yml
+  544  git add validate-data.sh .github/workflows/basictests.yml
+  545  git commit -m "Update workflow to test main and test branches"
+  546  git push origin test
+  547  gh run list
+  548  history > history.txt
